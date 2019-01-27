@@ -13,15 +13,7 @@ bot.on('guildMemberAdd', member => {
         return channel.send('Bienvenue sur le serveur de Alexpgm' + member.displayName)
         console.log(`${member.displayName} à rejoind le serveur.`)
     }).catch(console.error)
-});
 
-const ban = require('./kick et ban/ban');
-require('./embed/RichEmbed');
-
-bot.on('message', function (message){
-    if (ban.match(message)){
-        return ban.action(message)
-    }
 });
 
 
